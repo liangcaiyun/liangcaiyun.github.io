@@ -102,8 +102,8 @@ theme: hexo-theme-zhaoo
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-#deploy:
-  #type: ''
+deploy:
+  type: ''
 deploy:
   type: git
   repo: https://github.com/liangcaiyun/liangcaiyun.github.io.git
