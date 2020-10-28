@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          
+          python(7) - undefined
         
     </title>
 
-    <link rel="canonical" href="http://example.com/archives/2020/10/">
+    <link rel="canonical" href="http://example.com/2020/10/28/python-7/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -88,7 +88,7 @@
     header.intro-header{
         
             background-image: url('')
-            /*page*/
+            /*post*/
         
     }
     
@@ -101,10 +101,16 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 
-                    <div class="site-heading">
-                        <h1>Hexo</h1>
-                        <!--<hr class="small">-->
-                        <span class="subheading"></span>
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                        </div>
+                        <h1>python(7)</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by John Doe on
+                            2020-10-28
+                        </span>
                     </div>
                 
 
@@ -183,203 +189,116 @@
 
 
     <!-- Main Content -->
-    <!-- Main Content -->
-<div class="container">
-    <div class="row">
-        
+    <!-- Modify by Yu-Hsuan Yen -->
 
-<!-- USE SIDEBAR -->
-    <!-- Post Container -->
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
-                
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 archive">
-            <!-- 归档列表 -->
-            
-            
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-             <!-- 归档列表 -->
+                <h3 id="title-python-笔记（七）-模块"><a href="#title-python-笔记（七）-模块" class="headerlink" title="title:python 笔记（七）-模块"></a>title:python 笔记（七）-模块</h3><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<blockquote>
+<p>昨日作业 代码参考</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 7、写函数，检查传入字典的每一个value的长度，如果大于2，那么仅仅保留前两个长度的内容，并将新内容返回给调用者</span></span><br><span class="line"><span class="comment"># dic = &#123;“k1”: &quot;v1v1&quot;,&quot;k2&quot;:[11,22,33]&#125;</span></span><br><span class="line"><span class="comment"># ps:字典中的value只能是字符串或列表</span></span><br><span class="line"></span><br><span class="line">def v_2(dic1):</span><br><span class="line"><span class="comment">#定义一个空字典</span></span><br><span class="line">dic=&#123;&#125;</span><br><span class="line"><span class="comment">#同步遍历字典的键和值</span></span><br><span class="line"><span class="keyword">for</span> k,v <span class="keyword">in</span> dic1.items():</span><br><span class="line"><span class="keyword">if</span> len(v)&gt;2:</span><br><span class="line">dic[k]=v[0:2]</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">dic[k]=v</span><br><span class="line"><span class="built_in">return</span> dic</span><br><span class="line">dic=&#123;<span class="string">&quot;k1&quot;</span>: <span class="string">&quot;v1v1&quot;</span>,<span class="string">&quot;k2&quot;</span>:[11,22,33]&#125;</span><br><span class="line"><span class="built_in">print</span>(v_2(dic))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2020">
-                    <span class="tag-text">2020</span>
-                </span>
-                <ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#5、写一个函数，传入一个字符串，求字符串中出现次数最多的字符</span></span><br><span class="line"><span class="comment">#定义函数</span></span><br><span class="line">def count_str(str):</span><br><span class="line"><span class="comment">#字典用来存放 出现的字符 和 对应的次数</span></span><br><span class="line">dic=&#123;&#125;</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> str:</span><br><span class="line"><span class="comment">#如果字符不在字典中，添加到字典中</span></span><br><span class="line"><span class="keyword">if</span> i not <span class="keyword">in</span> dic:</span><br><span class="line"><span class="comment">#dic[i]是字符出现的次数，str.count(i)用来统计字符i出现的次数</span></span><br><span class="line"><span class="comment">#增加字符和次数</span></span><br><span class="line">dic[i]=str.count(i)</span><br><span class="line"><span class="comment">#寻找字典中的值的最大值，也就是最大次数</span></span><br><span class="line">max_count=max(dic.values())</span><br><span class="line"><span class="keyword">for</span> k,v <span class="keyword">in</span> dic.items():</span><br><span class="line"><span class="keyword">if</span> v==max_count:</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;出现次数最多的字符是&quot;</span>,k,<span class="string">&quot;出现的次数为&quot;</span>,v)</span><br><span class="line"></span><br><span class="line">str=input(<span class="string">&quot;请输入字符串:\n&quot;</span>)</span><br><span class="line">count_str(str)</span><br></pre></td></tr></table></figure>
+
                 
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    10-28
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2020/10/28/python-7/" style="color: #0085a1">
-                        <span>
-                            python(7)
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    10-22
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2020/10/22/title/" style="color: #0085a1">
-                        <span>
-                            title
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    10-22
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2020/10/22/hello-world/" style="color: #0085a1">
-                        <span>
-                            Hello World
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/2020/10/22/title/" data-toggle="tooltip" data-placement="top" title="title">Next Post &rarr;</a>
+                        </li>
+                    
                 </ul>
-            </div>
-            
-
-
-        </div>
-    </div>
-</div>
-
-<style type="text/css">
-
-   @media (min-width: 992px) {
-   .archive {
-       margin-left: 8.33333333%;
-       padding-right: 26.333333%;
-   }
-}
-</style>
-
-<style type="text/css">
-   @media (min-width: 1200px){
-   .archive {
-   margin-left: 16.66666667%;
-   padding-right: 16.666667%;
-   }
-}
-</style>
-
 
                 <br>
 
+                <!--打赏-->
+                
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                
+                <!--分享-->
+                <br>                       
+                
                 <!-- require APlayer -->
                 
 
-                <!-- 如果开启评论功能 -->
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+                <!-- Friends Blog -->
                 
             </div>
-
-          <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Featured Tags -->
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-    <h5><a href="/about/">ABOUT ME</a></h5>
-    <div class="short-about">
-
-        
-
-        
-
-        <!-- SNS Link -->
-        <ul class="list-inline">
-            
-            
-            
-
-            
-
-            
-
-            
-            
-            
-            
-        </ul>
+        </div>
     </div>
-</section>
+</article>
 
-        <hr>
-    
-        
-  <h5>RECENT POSTS</h3>
-  <div class="widget">
-    <ul>
-      
-        <li>
-          <a href="/2020/10/28/python-7/">python(7)</a>
-        </li>
-      
-        <li>
-          <a href="/2020/10/22/title/">title</a>
-        </li>
-      
-        <li>
-          <a href="/2020/10/22/hello-world/">Hello World</a>
-        </li>
-      
-    </ul>
-  </div>
 
-        <hr>
-    
-        <!-- Friends Blog -->
 
-        <hr>
-    
-        
-    <h5>ARCHIVES</h5>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li></ul>
-    </div>
 
-        <hr>
-    
-</div>
 
-        
-    </div>
-</div>
+
+
+
+
+<!-- chrome Firefox 中文锚点定位失效-->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<!-- smooth scroll behavior polyfill  -->
+<script type="text/javascript" src="/js/smoothscroll.js"></script>
+<script>
+        $('#toc').on('click','a',function(a){
+            // var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
+            // console.log(window.navigator.userAgent,isChrome)
+                // if(isChrome) {
+                    // console.log(a.currentTarget.outerHTML);
+                    // console.log($(a.currentTarget).attr("href"));
+                    //跳转到指定锚点
+                    // document.getElementById(a.target.innerText.toLowerCase()).scrollIntoView(true);
+                    document.getElementById($(a.currentTarget).attr("href").replace("#","")).scrollIntoView({behavior: 'smooth' });
+                // }
+        })  
+</script>
 
 
     <!-- Footer -->
