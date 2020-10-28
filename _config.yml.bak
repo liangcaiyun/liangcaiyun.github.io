@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: '鹏鹏的个人博客'
 subtitle: ''
 description: ''
 keywords:
@@ -41,7 +41,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: True
 relative_link: false
 future: true
 highlight:
@@ -98,12 +98,12 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-zhaoo
+theme: themes
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: ''
+#deploy:
+  #type: ''
 deploy:
   type: git
   repo: https://github.com/liangcaiyun/liangcaiyun.github.io.git
